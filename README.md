@@ -20,7 +20,7 @@ Library JavaScript/TypeScript untuk konversi mata uang Rupiah Indonesia setelah 
 - 📝 **TypeScript Support** - Full type definitions
 - 🎭 **Global Config** - Set konfigurasi sekali, gunakan di mana saja
 
-<!-- ## 📦 Instalasi
+## 📦 Instalasi
 
 ```bash
 # npm
@@ -34,7 +34,7 @@ pnpm add redenominasi-rupiah
 
 # bun
 bun add redenominasi-rupiah
-``` -->
+```
 
 ## 🚀 Quick Start
 
