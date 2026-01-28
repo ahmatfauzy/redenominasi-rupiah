@@ -1,0 +1,31 @@
+# Source files (dist is included)
+src/
+
+# Test files
+coverage/
+*.test.ts
+*.test.tsx
+__tests__/
+
+# Config files
+tsconfig.json
+tsconfig.esm.json
+jest.config.js
+.gitignore
+
+# Development files
+node_modules/
+bun.lock
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.github/
+
+# Misc
+*.log
+.DS_Store

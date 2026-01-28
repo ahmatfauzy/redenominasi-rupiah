@@ -20,23 +20,50 @@
       "types": "./dist/index.d.ts"
     },
     "./react": {
-      "import": "./dist/react.esm.js",
-      "require": "./dist/react.js",
-      "types": "./dist/react.d.ts"
+      "import": "./dist/react/index.js",
+      "require": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "rupiah",
     "redenominasi",
+    "redenomination",
     "currency",
     "conversion",
-    "indonesian"
+    "indonesian",
+    "indonesia",
+    "idr",
+    "money",
+    "finance",
+    "react"
   ],
   "author": "ahmatfauzy",
   "license": "MIT",
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmatfauzy/redenominasi-rupiah.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmatfauzy/redenominasi-rupiah/issues"
+  },
+  "homepage": "https://github.com/ahmatfauzy/redenominasi-rupiah#readme",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
@@ -45,6 +72,8 @@
     "@types/react-dom": "^19.2.3",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "ts-jest": "^29.4.5",
     "typescript": "^5.9.3"
   },
