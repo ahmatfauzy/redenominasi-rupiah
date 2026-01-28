@@ -1,29 +1,27 @@
-import type { RedenominasiConfig } from '../types/config';
-
-export * from './converter';
-export * from './formatter-main';
-export * from './rounding';
-export * from './formatter';
-
-let globalConfig: Partial<RedenominasiConfig> = {};
-
 /**
- * Set global configuration for all operations
+ * Core module exports for redenominasi-rupiah
+ * 
+ * This module provides all core functionality for currency redenomination:
+ * - Conversion functions (convert, revert, convertBulk, revertBulk)
+ * - Formatting functions (format, formatBulk, formatCurrency)
+ * - Utility functions (sanitizeInput, isValidValue, mergeConfig)
+ * - Configuration management (setGlobalConfig, getGlobalConfig, resetGlobalConfig)
+ * - Rounding utilities (applyRounding, floorValue, ceilValue, roundValue)
  */
-export function setGlobalConfig(config: Partial<RedenominasiConfig>): void {
-  globalConfig = { ...config };
-}
 
-/**
- * Get current global configuration
- */
-export function getGlobalConfig(): Partial<RedenominasiConfig> {
-  return { ...globalConfig };
-}
+export {
+  convert,
+  revert,
+  convertBulk,
+  revertBulk,
+  isValidValue,
+  sanitizeInput,
+  mergeConfig,
+  setGlobalConfig,
+  getGlobalConfig,
+  resetGlobalConfig,
+} from './converter';
 
-/**
- * Reset global configuration to defaults
- */
-export function resetGlobalConfig(): void {
-  globalConfig = {};
-}
+export { format, formatBulk } from './formatter-main';
+export { applyRounding, floorValue, ceilValue, roundValue } from './rounding';
+export { formatCurrency } from './formatter';
